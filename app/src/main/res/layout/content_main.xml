@@ -10,22 +10,72 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="numberSigned" />
-
-    <TextView
-        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginLeft="@dimen/espaco_entre_campos"
+        android:layout_marginTop="@dimen/espaco_entre_campos"
+        android:layout_marginRight="@dimen/espaco_entre_campos"
+        android:layout_weight="0"
+        android:background="@color/colorLabels"
+        android:gravity="center"
+        android:padding="@dimen/padding_controlos"
+        android:text="@string/temperatura"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextoLabels"
+        android:textSize="@dimen/tamanho_texto_labels"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_temperatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/espaco_entre_campos"
+        android:layout_marginRight="@dimen/espaco_entre_campos"
+        android:layout_weight="0"
+        android:background="@color/colorInputs"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:padding="@dimen/padding_controlos"
+        android:selectAllOnFocus="false"
+        android:importantForAutofill="no" tools:targetApi="o" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/espaco_entre_campos"
+        android:layout_marginTop="@dimen/espaco_entre_campos"
+        android:layout_marginRight="@dimen/espaco_entre_campos"
+        android:layout_weight="0"
+        android:background="@color/colorLabels"
+        android:gravity="center"
+        android:padding="@dimen/padding_controlos"
+        android:text="@string/temperatura"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextoLabels"
+        android:textSize="@dimen/tamanho_texto_labels"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/espaco_entre_campos"
+        android:layout_marginRight="@dimen/espaco_entre_campos"
+        android:layout_weight="0"
+        android:background="@color/colorInputs">
+
+        <RadioButton
+            android:id="@+id/radio_fahrenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fahrenheit"
+            android:textColor="@color/colorTextoLabels" />
+
+        <RadioButton
+            android:id="@+id/radio_celsius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/celsius"
+            android:textColor="@color/colorTextoLabels" />
+    </RadioGroup>
 
 </LinearLayout>
