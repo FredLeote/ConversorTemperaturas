@@ -32,6 +32,7 @@
         android:layout_marginLeft="@dimen/espaco_entre_campos"
         android:layout_marginRight="@dimen/espaco_entre_campos"
         android:layout_weight="0"
+        android:gravity="center"
         android:background="@color/colorInputs"
         android:ems="10"
         android:inputType="numberSigned"
