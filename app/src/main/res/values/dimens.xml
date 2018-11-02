@@ -3,4 +3,5 @@
     <dimen name="padding_controlos">7dp</dimen>
     <dimen name="espaco_entre_campos">16dp</dimen>
     <dimen name="tamanho_texto_labels">14sp</dimen>
+    <dimen name="margem_controlos">16dp</dimen>
 </resources>

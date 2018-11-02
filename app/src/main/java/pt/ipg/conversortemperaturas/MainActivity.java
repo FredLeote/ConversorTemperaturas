@@ -1,5 +1,6 @@
 package pt.ipg.conversortemperaturas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,5 +51,16 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void mostraTemperaturas(View view) {
+        Intent intent = new Intent(this, MostraTemperaturasActivity.class);
+        EditText editText_temperatura = (EditText) findViewById(R.id.editText_temperatura);
+        RadioButton radio_Fahrenheit = (RadioButton) findViewById(R.id.radio_fahrenheit);
+
+        String s = editText_temperatura.getText().toString();
+        double valorTemperatura = Double.parseDouble(s);
+
+        startActivity(intent);
     }
 }
